@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="crud">
+            
+            <h1 class="crud_title">Lista de Tareas</h1>
+            <p class="parrafo">Con esta aplicacion podras mantener organizada todas tus tareas y proyectos diarios. 
+                <br>Recuerda clasificarlos por:
+                <ol>
+                    <li>Importante y Urgente</li>
+                    <li>Importante</li>
+                    <li>Urgente</li>
+                    <li>Ladron de Tiempo</li>
+                </ol>
+
+            </p>
+
+            <form id="formRegister" class="crud_form">
+                <input type="text" placeholder="Tarea" id="tareainput" class="form_input">
+                <input type="text" placeholder="Importancia" id="importanciainput" class="form_input">
+                <button type="submit" id="submitbutton" class="button button--primary">Agregar</button>
+            </form>
+
+            <table class="crudtable">
+                <thead>
+                    <tr>
+                        <th class="table_header">Tarea</th>
+                        <th class="table_header">Importancia</th>
+                        <th class="table_header">Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablebody" class="table_body"></tbody>
+            </table>
+            
+
+
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+
+
+</body>
+</html>

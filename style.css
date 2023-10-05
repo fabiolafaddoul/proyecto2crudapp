@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+
+body, button, input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+.crud_title{
+    text-align:left;
+    color: dodgerblue;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+
+.parrafo{
+    line-height: 25px;
+}
+
+ol{
+    list-style:none;
+    text-indent: 50px;
+    line-height: 25px;
+}
+
+
+.crud_form{
+    display: flex;
+    margin: 10px 0;
+    margin-top: 50px;
+}
+
+
+.form_input{
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+.button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 60px;
+    font-weight: 200;
+    font-size: small;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 150px;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.button--primary{
+    background-color: rgb(155, 203, 250);
+}
+
+.button--secundary{
+    background-color: rgb(252, 243, 120);
+}
+
+.button--terciary{
+    background-color: firebrick;
+    color: aliceblue;
+}
+
+.button--fourth{
+    background-color:rgb(151, 207, 151);
+
+}
+
+.button--fourth:active{
+    background-color: rgb(249, 137, 137);
+
+}
+
+.crudtable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_header, .table_body td{
+    border: 1px solid  rgb(192, 182, 251);
+    padding: 5px;
+    color:rgb(35, 34, 34)
+
+}
+
+.table_header{
+    background-color: rgb(192, 182, 251);
+    text-align:center;
+}
+
+.table_body td:nth-child(3){
+    display: flex;
+    justify-content:center;
+}
+
+
