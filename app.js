@@ -53,12 +53,12 @@ function renderTable(){
         const importanciaCell = document.createElement('td');
         const actionCell = document.createElement('td');
 
-    // Dentro de la celda "action" o acciones creamos dos botones un editar y otro eliminar.
+    // Dentro de la celda "action" o acciones creamos tres botones uno para marcar tarea como terminada, otro de editar y otro de eliminar.
         const lineButton = document.createElement('button')
         const editButton = document.createElement('button')
         const deleteButton = document.createElement('button')
     
-    // Agregamos el contenido de la celda, texto para name y email.
+    // Agregamos el contenido de la celda, texto para tarea e importancia.
         tareaCell.textContent = item.tarea;
         importanciaCell.textContent = item.importancia;
 

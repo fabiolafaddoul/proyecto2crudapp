@@ -25,7 +25,7 @@ body, button, input {
 
 .crud_title{
     text-align:left;
-    color: dodgerblue;
+    color: rgb(91, 171, 252);
     font-size: 50px;
     line-height: 100px;
 }
