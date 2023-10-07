@@ -54,7 +54,7 @@ function renderTable(){
         const actionCell = document.createElement('td');
 
     // Dentro de la celda "action" o acciones creamos tres botones uno para marcar tarea como terminada, otro de editar y otro de eliminar.
-        const lineButton = document.createElement('button')
+        const checkButton = document.createElement('button')
         const editButton = document.createElement('button')
         const deleteButton = document.createElement('button')
     
@@ -63,18 +63,18 @@ function renderTable(){
         importanciaCell.textContent = item.importancia;
 
     // Agregamos el texto en los botones. 
-        lineButton.textContent = 'Tarea Terminada';
+        checkButton.textContent = 'Tarea Terminada';
         editButton.textContent = 'Editar';
         deleteButton.textContent = 'Eliminar';
 
     // asignamos las clases a los botones que aparecen en la celda "acciones".
         editButton.classList.add('button', 'button--secundary');
         deleteButton.classList.add('button', 'button--terciary');
-        lineButton.classList.add('button', 'button--fourth');
+        checkButton.classList.add('button', 'button--fourth');
 
     // Eventos de escucha con funciones para los botones de la celda "acciones" editar y eliminar.
-        lineButton.addEventListener('click', function(){
-            lineData(index);
+        checkButton.addEventListener('click', function(){
+            checkData(index);
         })
         editButton.addEventListener('click', function(){
             editData(index);
@@ -85,7 +85,7 @@ function renderTable(){
         })
 
         // Agregamos los botones a la celda de acciones.
-        actionCell.appendChild(lineButton);
+        actionCell.appendChild(checkButton);
         actionCell.appendChild(editButton);
         actionCell.appendChild(deleteButton);
 
